@@ -2,14 +2,18 @@
   "name": "personalpage",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://drorkrief.github.io/dror-home-page/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm tun build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
