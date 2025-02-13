@@ -1,10 +1,7 @@
-import { useState } from "react";
 import "./App.css";
-import MainSection from "./MainSection";
+import MainSection from "./components/header/MainSection";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <MainSection />
