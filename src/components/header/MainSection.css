@@ -7,7 +7,11 @@
   color: #ffffff;
   letter-spacing: 2px;
 }
-
+.header {
+  width: 80%;
+  max-width: 1212px;
+  margin: auto;
+}
 .dev::after {
   position: relative;
   right: 5px;
@@ -37,29 +41,106 @@
 .nav-links a {
   color: #ffffff;
   text-decoration: none;
+  font-weight: 700;
 }
 .main-page {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
+  gap: 40px;
+  /* height: 100vh; */
   width: 65%;
   margin: auto;
   background-color: #1d1f24;
 }
-.image-container {
-  width: 200px; /* Set the desired circular size */
-  height: 200px; /* Must be equal to width */
-  overflow: hidden; /* Hide the edges */
-  border-radius: 50%; /* Make it circular */
+.main-decor {
+  width: 100%;
+  direction: rtl;
+}
+.main-decor div {
+  width: 30vw;
+  display: inline-block;
+}
+.main-decor p::after {
+  content: "";
+  border: #00ff99 15px solid;
+  width: 0px;
+  height: 0px;
+  display: block;
+  position: relative; /* Position it absolutely within the container */
+  top: -30px; /* Adjust the position as needed */
+  left: 30px; /* Center it horizontally */
+  border-radius: 50%; /* Make the pseudo-element circular */
+  box-shadow: 0 0 15px rgba(0, 255, 153, 0.5); /* Add shadow */
 }
 
+.main-decor p {
+  width: 100px;
+  display: inline-block;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  border: 7px solid #00ff99;
+  box-shadow: 0px 0px 8px 7px rgba(0, 255, 153, 0.5);
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* .main-page-text {
+  }
+  .main-page-text::after {
+    content: "";
+    border: #00ff99 10px solid;
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: relative; /* Position it absolutely within the container 
+    top: -330px; /* Adjust the position as needed 
+    left: -130px; /* Center it horizontally 
+    border-radius: 50%; /* Make the pseudo-element circular 
+    box-shadow: 0 0 15px rgba(0, 255, 153, 0.5); /* Add shadow 
+    } */
 .circular-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image fills the circular area */
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* border: 4px solid white; Optional */
+}
+.small-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: -130px;
+  border: 7px solid #00ff99;
+  box-shadow: 0px 0px 8px 7px rgba(0, 255, 153, 0.5);
 }
 .main-page-header {
-  width: 300px;
+  width: 390px;
+  font-size: 42px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 820px) {
+  .main-page {
+    flex-direction: column-reverse;
+  }
+  .circular-image {
+    width: 60vw;
+    height: 60vw;
+  }
+  .small-circle {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 1vw;
+    left: -9vw;
+  }
 }
