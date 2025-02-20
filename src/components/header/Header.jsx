@@ -7,31 +7,35 @@ export default function Header() {
   };
   return (
     <header className="header">
-      <nav>
-        <ul className="nav-links">
+      <div className="logo">
+        <span className="dev">DEV</span>
+        <span className="name">DROR KRIEF</span>
+      </div>
+      <a
+        href="#"
+        className={showMenu ? "menuBtn" : "menuBtn act"}
+        onClick={toggleMenu}
+      >
+        <span className="lines"></span>
+      </a>
+      <nav className={showMenu ? "mainMenu" : "mainMenu act"}>
+        <ul>
           <li>
-            <div className="logo">
-              <span className="dev">DEV</span>
-              <span className="name">DROR KRIEF</span>
-            </div>
+            <a href="#">Intro</a>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#">Services</a>
           </li>
           <li>
-            <a href="#blog">Blog</a>
+            <a href="#">Team</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#">Pricing</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li className="burger-menu">
-            <button onClick={toggleMenu}>BurgerMenu</button>
+            <a href="#" class="suBtn">
+              Sing Up
+            </a>
           </li>
         </ul>
       </nav>
