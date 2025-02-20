@@ -30,19 +30,7 @@
   color: #ffffff;
   letter-spacing: 1px;
 }
-.nav-links {
-  display: flex;
-  margin-top: 20px;
-  justify-content: space-around;
-  /* gap: 1vw; */
-  align-items: center;
-  list-style: none;
-}
-.nav-links a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 700;
-}
+
 .main-page {
   display: flex;
   flex-direction: row-reverse;
@@ -89,26 +77,11 @@
   display: inline-block;
 }
 
-/* .main-page-text {
-  }
-  .main-page-text::after {
-    content: "";
-    border: #00ff99 10px solid;
-    width: 100px;
-    height: 100px;
-    display: block;
-    position: relative; /* Position it absolutely within the container 
-    top: -330px; /* Adjust the position as needed 
-    left: -130px; /* Center it horizontally 
-    border-radius: 50%; /* Make the pseudo-element circular 
-    box-shadow: 0 0 15px rgba(0, 255, 153, 0.5); /* Add shadow 
-    } */
 .circular-image {
   width: 400px;
   height: 400px;
   border-radius: 50%;
   object-fit: cover;
-  /* border: 4px solid white; Optional */
 }
 .small-circle {
   width: 100px;

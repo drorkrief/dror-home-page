@@ -1,0 +1,27 @@
+.nav-links {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+  /* gap: 1vw; */
+  align-items: center;
+  list-style: none;
+}
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.nav-links a:hover {
+  color: #00ff99;
+}
+.burger-menu {
+  display: none;
+}
+@media (max-width: 820px) {
+  .nav-links a {
+    display: none;
+  }
+  .burger-menu {
+    display: inline-block;
+  }
+}

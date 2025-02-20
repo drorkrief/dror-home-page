@@ -1,4 +1,10 @@
+import { useState } from "react";
+import "./Header.css";
 export default function Header() {
+  const [showMenu, setShowMenu] = useState(false);
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <header className="header">
       <nav>
@@ -9,12 +15,6 @@ export default function Header() {
               <span className="name">DROR KRIEF</span>
             </div>
           </li>
-          <li></li>
-          <li>{/* <a href="#services">Services</a> */}</li>
-          <li>{/* <a href="#skills">Skills</a> */}</li>
-          <li>{/* <a href="#experience">Experience</a> */}</li>
-          <li>{/* <a href="#education">Education</a> */}</li>
-          <li>{/* <a href="#testimonials">Testimonials</a> */}</li>
           <li>
             <a href="#portfolio">Portfolio</a>
           </li>
@@ -29,6 +29,9 @@ export default function Header() {
           </li>
           <li>
             <a href="#contact">Contact</a>
+          </li>
+          <li className="burger-menu">
+            <button onClick={toggleMenu}>BurgerMenu</button>
           </li>
         </ul>
       </nav>
