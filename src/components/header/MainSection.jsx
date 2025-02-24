@@ -1,4 +1,4 @@
-import "./MainSection.css";
+import "./MainSection.scss";
 import me from "/me.jpg";
 export default function MainSection() {
   return (

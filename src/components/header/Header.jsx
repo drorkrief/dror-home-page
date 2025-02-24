@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./Header.css";
+import "./Header.scss";
 export default function Header() {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
