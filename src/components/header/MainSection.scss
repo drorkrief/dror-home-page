@@ -11,6 +11,9 @@
   width: 80%;
   max-width: 1212px;
   margin: auto;
+  div.logo{
+    text-decoration: none;
+  }
 }
 @media only screen and (min-width: 820px) {
   .header {
