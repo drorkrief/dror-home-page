@@ -130,11 +130,16 @@
 .main-page-header {
 width: 95%;
 padding-bottom: 10px;
+font-size: 7vw;
 }
 .main-decor {
-  top: -250px;
-  right: -80px;
+  top: -24vw;
+  right: -60px;
   position: relative;
+  p{
+    width: 15vw;
+    height: 15vw;
+  }
 }
   .main-page {
     flex-direction: column-reverse;
