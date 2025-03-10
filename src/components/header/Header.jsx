@@ -7,10 +7,12 @@ export default function Header() {
   };
   return (
     <header className="header">
-      <div className="logo">
-        <span className="dev">DEV</span>
-        <span className="name">DROR KRIEF</span>
-      </div>
+      <a href="https://drorkrief.github.io/dror-home-page">
+        <div className="logo">
+          <span className="dev">DEV</span>
+          <span className="name">DROR KRIEF</span>
+        </div>
+      </a>
       <a
         href="#"
         className={showMenu ? "menuBtn" : "menuBtn act"}
@@ -20,19 +22,22 @@ export default function Header() {
       </a>
       <nav className={showMenu ? "mainMenu" : "mainMenu act"}>
         <ul>
-          <li>
-            <a href="#">Intro</a>
+          <li onClick={toggleMenu}>
+            <a href="#portfolio">Portfolio</a>
           </li>
-          <li>
-            <a href="#">Services</a>
+          <li onClick={toggleMenu}>
+            <a href="#blog">Blog</a>
           </li>
-          <li>
-            <a href="#">Team</a>
+          <li onClick={toggleMenu}>
+            <a href="#about">About</a>
           </li>
-          <li>
-            <a href="#">Pricing</a>
+          <li onClick={toggleMenu}>
+            <a href="#projects">Projects</a>
           </li>
-          <li>
+          <li onClick={toggleMenu}>
+            <a href="#contact">Contact</a>
+          </li>
+          <li onClick={toggleMenu}>
             <a href="#" class="suBtn">
               Sing Up
             </a>
