@@ -59,7 +59,9 @@
   color: #ffffff;
   letter-spacing: 1px;
 }
-
+main{
+  overflow: hidden;
+}
 .main-page {
   display: flex;
   flex-direction: row-reverse;

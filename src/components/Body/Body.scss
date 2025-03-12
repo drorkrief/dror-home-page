@@ -1,0 +1,22 @@
+.hidden {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .containerbox{
+    overflow: hidden;
+
+  }
+  .box {
+    // background: #00ff99;
+    border: #00ff99 1.5px solid;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }

@@ -3,3 +3,58 @@
           <li>{/* <a href="#experience">Experience</a> */}</li>
           <li>{/* <a href="#education">Education</a> */}</li>
           <li>{/* <a href="#testimonials">Testimonials</a> */}</li>
+
+          <div id="portfolio" className="divs">
+        Portfolio
+        <h2>Cascade Effect</h2>
+        <p>Child elements can animate one after another.</p>
+        <ul>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+        </ul>
+      </div>
+
+      <div id="blog" className="divs">
+        Blog
+        <h2>Cascade Effect</h2>
+        <p>Child elements can animate one after another.</p>
+        <ul>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+        </ul>
+      </div>
+
+      <div id="about" className="divs">
+        About
+        <h2>Cascade Effect</h2>
+        <p>Child elements can animate one after another.</p>
+        <ul>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+        </ul>
+      </div>
+
+      <div id="projects" className="divs">
+        Projects
+        <h2>Cascade Effect</h2>
+        <p>Child elements can animate one after another.</p>
+        <ul>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+        </ul>
+      </div>
+
+      <div id="contact" className="divs">
+        Contact
+        <h2>Cascade Effect</h2>
+        <p>Child elements can animate one after another.</p>
+        <ul>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+        </ul>
+      </div>
